@@ -11,6 +11,21 @@ pipeline
 					url: 'https://github.com/abderahim22/devops-cd.git']]
 				])}
 			}
+		
 		}
+ stage('Build')
+ 
+ { 
+ 
+        steps {
+        
+        script{
+        sh  "ansible-playbook ansible/build.yml  -i ansible/inventory/host.yml "
+        
+                           }
+        
+                      }
+        
+                 }
 	}
 }
