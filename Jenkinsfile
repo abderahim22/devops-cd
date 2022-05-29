@@ -4,7 +4,7 @@ pipeline
 	stages {
 		stage('Pull') {
 			steps{
-				scripts{
+				script{
 					chekout([$class:  'GitSCM', branches: [[name: '*/master']],
 				userRemoteConfigs: [[
 					credentialsId: 'GitHubCredentialsForJenkins',
