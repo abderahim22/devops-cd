@@ -8,7 +8,7 @@ pipline
 			scripts{
 				chekout([$class:  'GitSCM', branches: [[name: '*/master']],
 			userRemoteConfigs: [[
-			credentialsId: 'GitHubCredentialsForJenkins'
+			credentialsId: 'GitHubCredentialsForJenkins',
 			url: 'https://github.com/abderahim22/devops-cd.git']]
 			])
 		}
