@@ -1,4 +1,4 @@
-pipline
+pipeline
 {
 	agent any 
 	stages {
@@ -7,8 +7,8 @@ pipline
 				scripts{
 					chekout([$class:  'GitSCM', branches: [[name: '*/master']],
 				userRemoteConfigs: [[
-				credentialsId: 'GitHubCredentialsForJenkins',
-				url: 'https://github.com/abderahim22/devops-cd.git']]
+					credentialsId: 'GitHubCredentialsForJenkins',
+					url: 'https://github.com/abderahim22/devops-cd.git']]
 				])}
 			}
 		}
