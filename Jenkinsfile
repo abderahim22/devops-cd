@@ -13,6 +13,25 @@ pipeline
 			}
 		
 		}
+		
+		
+		
+ stage('Install')
+ 
+ { 
+ 
+        steps {
+        
+        script{
+        sh  "install npm "
+        
+                           }
+        
+                      }
+        
+                 }
+		
+
  stage('Build')
  
  { 
